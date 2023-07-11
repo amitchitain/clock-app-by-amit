@@ -143,7 +143,7 @@
         setInterval(() => {
             a = new Date();
             date = a.getDate() + '/' + a.getMonth() + '/' + a.getFullYear();
-            time = a.getHours() + ':' + a.getMinutes() + ':' + a.getSeconds();
+            time = a.getHours((12)) + ':' + a.getMinutes() + ':' + a.getSeconds();
             document.getElementById('time').innerHTML = time + " on " + date;
         }, 1000);
     </script>
@@ -151,7 +151,7 @@
 
 <body>
     <nav class="nav-1">
-        <h1>Hello World</h1>
+        <h1>Amit Dhatterwal</h1>
     </nav>
     <div class="container">
         <h1 class="h1">Time</h1>

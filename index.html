@@ -29,7 +29,7 @@
         @media (min-width:52px) and (max-width:318px){
             .container{
             width: 90%;
-            height: 15vh;
+            height: 100%;
             color: red;
             border: 1px solid black;
             border-radius: 50%;
@@ -51,15 +51,15 @@
             text-align: center;
             margin: auto;
             color: blue;
-            padding-top: 35px;
-            font-size: 40px;
+            /* padding-top: 35px; */
+            /* font-size: 40px; */
             /* background: linear-gradient(blue , red); */
         }
         }
         @media (min-width:319px) and (max-width:480px){
             .container{
             width: 200px;
-            height: 15vh;
+            height: 100%;
             color: red;
             border: 1px solid black;
             border-radius: 50%;
@@ -80,8 +80,8 @@
         .nav-1 h1{
             text-align: center;
             margin-top: 5px;
-            padding-top: 30px;
-            font-size: 45px;
+            /* padding-top: 30px; */
+            /* font-size: 45px; */
             /* font-family: Georgia, 'Times New Roman', Times, serif; */
             color: blue;
             /* background: linear-gradient(blue , red); */
@@ -90,7 +90,7 @@
         @media (min-width:481px) and (max-width:1200px){
             .container{
             width: 250px;
-            height: 15vh;
+            height: 100%;
             color: red;
             border: 1px solid black;
             border-radius: 5px;
@@ -101,10 +101,10 @@
             align-items: center;
             background: transparent;
             }
-            .h1{
+            /* .h1{
                 margin-top: 20px;
             }
-           
+            */
             .nav-1{
             background-color: rgb(118, 231, 186);
             height: 8vh;
@@ -114,15 +114,15 @@
             text-align: center;
             margin-top: 5px;
             color: blue;
-            padding-top: 25px;
-            font-size: 55px;
+            /* padding-top: 25px; */
+            /* font-size: 55px; */
             /* background: linear-gradient(blue , red); */
         }
         }
         @media (min-width:1201px) and (max-width:1600px){
             .container{
             width: 300px;
-            height: 15vh;
+            height: 100%;
             color: red;
             border: 1px solid black;
             border-radius: 5px;
@@ -142,15 +142,15 @@
             text-align: center;
             margin-top: 5px;
             color: blue;
-            padding-top: 25px;
-            font-size: 55px;
+            padding:auto;
+            /* font-size: 55px; */
             /* background: linear-gradient(blue , red); */
         }
         }
         @media (min-width:1601px) and (max-width:3762px){
             .container{
             width: 300px;
-            height: 15vh;
+            height: 100%;
             color: red;
             border: 1px solid black;
             border-radius: 5px;
@@ -169,8 +169,8 @@
         .nav-1 h1{
             text-align: center;
             margin-top: 5px;
-            font-size: 60px;
-            padding-top: 20px;
+            /* font-size: 60px; */
+            /* padding:auto; */
             /* font-size: 40px; */
             color: blue;
         }
@@ -198,8 +198,8 @@
             let hours = date.getHours()>12 ? date.getHours()-12:date.getHours();
             let min = date.getMinutes()<10 ? "0"+date.getMinutes():date.getMinutes();
             let sec = date.getSeconds()<10 ? "0"+date.getSeconds():date.getSeconds();
-            let x=date.getHours()<=12?"AM":"PM";
-            time.innerHTML= hours +":"+min+":"+sec+" "+x + " on "+ a;
+            let x = date.getHours()<=12 ? "AM":"PM";
+            time.innerHTML= hours +":"+min+":"+sec+" "+x+ " on "+ a;
 
         };
         setInterval(showTime,1000);
